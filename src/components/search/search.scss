@@ -1,0 +1,25 @@
+.search_bar {
+  position: fixed;
+  z-index: 999;
+  left: 50%;
+  top: 5%;
+  transform: translateX(-50%);
+  width: 90%;
+  @include device('tablet'){
+    top: 10%;
+    width: 50%;
+  }
+}
+
+.algolia-places {
+  z-index: 9999;
+  input {
+    padding: 1.5em;
+    border: none;
+    background-color: #D2FCFC;
+    border-radius: 4em;
+    @include device('tablet'){
+      padding: 2em;
+    }
+  }
+}
