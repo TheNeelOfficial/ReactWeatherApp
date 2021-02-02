@@ -1,0 +1,58 @@
+//configuration styles
+@import "~bootstrap/scss/bootstrap";
+@import "colors";
+@import "fonts";
+@import "breakpoints";
+
+// page styles
+@import "../../views/Home/Home";
+
+// component styles
+@import "../../components/search/search";
+@import "../../components/weather/weather";
+@import "../../components/forecast/forecast";
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: $roboto;
+  height: 100vh;
+  background: #b2fefa; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #0ed2f7,
+    #b2fefa
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #0ed2f7,
+    #b2fefa
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #555;
+
+  a {
+    color: $white;
+    outline: 0 !important;
+    text-decoration: none;
+    &:hover {
+      cursor: pointer;
+      text-decoration: none;
+      color: $black;
+    }
+  }
+  a {
+    outline: 0 !important;
+    text-decoration: none;
+    &:hover {
+      cursor: pointer;
+      text-decoration: none;
+      color: $bg;
+    }
+  }
+  textarea:focus,
+  input:focus,
+  button:focus {
+    outline: 0 !important;
+  }
+}

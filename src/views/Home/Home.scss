@@ -1,0 +1,6 @@
+.home {
+  height: 100vh;
+  @include device("tablet") {
+    height: 100vh;
+  }
+}
