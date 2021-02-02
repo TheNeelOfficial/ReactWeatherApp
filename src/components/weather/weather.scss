@@ -1,0 +1,77 @@
+.weather_card{
+    width: 60%;
+    text-align: center;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    @include device('tablet'){
+        top: 30%; 
+    }
+    .weather_card--contents{
+        .content-left{
+            margin: auto;
+            text-align: left;
+            .city_name{
+                font-size: 1.5em;
+                font-weight: 600;
+                letter-spacing: 0.05em;
+                color: #555;
+                text-align: center;
+                @include device('tablet'){
+                    text-align: left;
+                }
+            }
+            .today{
+                color: #F3F7FB;
+                font-weight: 600;
+                letter-spacing: 0.02em;
+                text-align: center;
+                @include device('tablet'){
+                    text-align: left;
+                }
+            }
+            .weather_img{
+                position: relative;
+                left: 50%;
+                transform: translate(-50%);
+                padding: 0.1em;
+                @include device('tablet'){
+                    // padding: 1em;
+                }
+            }
+            .text-center{
+                text-align: center;
+                .weather_desc{
+                    font-size: 1.2em;
+                    font-weight: 600;
+                    letter-spacing: 0.04em;
+                }
+            }
+        }
+        .content-right{
+            .current_temperature{
+                margin: auto;
+                font-size: 4em;
+                font-weight: 900;
+            }
+            .more_details{
+                margin: auto;
+                width: 100%;
+                font-size: 1.2em;
+                font-weight: 100;
+                letter-spacing: 0.02em;
+                padding: 2em;
+                .more_icon{
+                    width: 40%;
+                }
+                @include device('tablet'){
+                    width: 40%;
+                    font-size: 1.5em;
+                    font-weight: 100;
+                    letter-spacing: 0.02em;
+                }
+            }
+        }
+    }
+}
