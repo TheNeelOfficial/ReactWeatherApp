@@ -11,19 +11,21 @@ const history = useHistory();
 const [searchLocation, setSearchLocation] = React.useState('Melbourne, Victoria, Australia');    
 
       return (
-        <div className="Search_bar">
-                <AlgoliaPlaces
-                    placeholder='Enter location'
+        <div>
+            <div className="Search_bar">
+                    <AlgoliaPlaces
+                        placeholder='Enter location'
 
-                    options={{
-                        language: 'en',
-                    }}
-                    // send search input as a url param
-                    onChange={e => {
-                        setSearchLocation(e.suggestion.value)
-                        history.push("/search/" + e.suggestion.value);
-                    }}
-                />
+                        options={{
+                            language: 'en',
+                        }}
+                        // send search input as a url param
+                        onChange={e => {
+                            setSearchLocation(e.suggestion.value)
+                            history.push("/search/" + e.suggestion.value);
+                        }}
+                    />
+            </div>            
         </div>
       )
 }
