@@ -1,0 +1,44 @@
+.forecast_card {
+  display: flex;
+  position: fixed;
+  z-index: 9999;
+  left: 50%;
+  bottom: 0%;
+  transform: translateX(-50%);
+  width: 100%;
+  background: #FFFFFF;
+  border-top-left-radius: 1.5em;
+  border-top-right-radius: 1.5em;
+  //   border-radius: 2em;
+  overflow-x: scroll;
+  -webkit-box-shadow: 2px 6px 31px -7px rgba(0,0,0,0.59); 
+  box-shadow: 2px 6px 31px -7px rgba(0,0,0,0.59);
+  .daily_forecast {
+    position: relative;
+    margin: 2em;
+    flex: 10%;
+    text-align: center;
+    p {
+      font-weight: 900;
+      letter-spacing: 0.1em;
+      font-size: 0.8em;
+    }
+    img {
+      width: 50px;
+      padding: 0.5em;
+      @include device("laptop") {
+        width: 60%;
+      }
+      @include device("desktop") {
+        width: 40%;
+      }
+      @include device("largescreen") {
+        width: 20%;
+      }
+    }
+    span {
+      font-weight: 300;
+      letter-spacing: 0.2em;
+    }
+  }
+}
