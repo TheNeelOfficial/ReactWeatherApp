@@ -12,7 +12,7 @@ const [searchLocation, setSearchLocation] = React.useState('Melbourne, Victoria,
 
       return (
         <div>
-            <div className="Search_bar">
+            <div className="search_bar">
                     <AlgoliaPlaces
                         placeholder='Enter location'
 
